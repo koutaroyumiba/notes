@@ -16,3 +16,22 @@ After compiling, the linker kicks in. Linker's job is to combine all of the obje
 2. ensures all cross-file dependencies are resolved properly
 3. linker typically links in one or more library files (collections of precompiled code that have been packaged up for reuse in other programs)
 4. linker outputs the desired output file
+
+---
+
+For gcc and Clang users:
+Add `-ggdb` to the command line for debug builds and `-O2 -DNDEBUG` for release builds.
+
+For GCC and Clang, the `-O#` options is used to control optimization settings. The most common options are as follows:
+- `-O0` is the recommended optimization level for debug builds, as it disables optimization. This is the default setting.
+- `-O2` is the recommended optimization level for release builds, as it applies optimizations that should be beneficial for all programs
+- `-O3` adds additional optimizations that may or may not perform better than `-O2` depending on the specific program
+
+Additional note: you can disable compiler extensions by adding the `-pedantic-errors` flag to the compile command line
+Additional note: add the following flags to your command line: `-Wall Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror`
+
+For GCC/G++/Clang, you can use compiler options `-std=c++11`, `-std=c++14`, `-std=c++17`, `-std=c++20`, `-std=c++23`
+If you have :q
+gc
+
+
