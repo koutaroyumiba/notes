@@ -1,1 +1,6 @@
+# for rust stuff
 **/target/
+
+# for zig stuff
+**/.zig-cache
+**/zig-out/
